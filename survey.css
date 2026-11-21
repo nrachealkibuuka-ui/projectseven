@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: #D4AF37;
+    color: #002147;
+    padding: 20px 5%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-content h1 {
+    font-size: 25px;
+    text-align: center;
+}
+/* SURVEY BANNER */
+.survey-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.survey-banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 33, 71, 0.65);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.banner-overlay h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.banner-overlay p {
+    font-size: 18px;
+}
+
+/* PROGRESS INDICATOR */
+.progress-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    background-color: white;
+}
+
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #777;
+    gap: 8px;
+}
+
+.progress-step span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+.progress-step.active span {
+    background-color: #D4AF37;
+    color: #002147;
+}
+
+.progress-step.active p {
+    color: #002147;
+    font-weight: bold;
+}
+
+.progress-line {
+    width: 100px;
+    height: 3px;
+    background-color: #ccc;
+    margin: 0 15px 25px;
+}
+/* MAIN SURVEY CONTAINER */
+.survey-container {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.survey-container h2 {
+    color: #002147;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* FIELDSET AND LEGEND */
+fieldset {
+    border: 2px solid #002147;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+legend {
+    color: #002147;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* FORM GROUPS */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group > label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #002147;
+}
+
+.form-group input:not([type="radio"]),
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #D4AF37;
+    box-shadow: 0 0 4px rgba(212, 175, 55, 0.5);
+}
+
+/* RADIO OPTIONS */
+.radio-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.radio-options label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.radio-options input {
+    accent-color: #002147;
+}
+
+/* CONTINUE BUTTON */
+button {
+    background-color: #002147;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #D4AF37;
+    color: #002147;
+}
+
+/* FOOTER */
+footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-content h1 {
+        font-size: 19px;
+    }
+
+    .banner-overlay h2 {
+        font-size: 23px;
+    }
+
+    .progress-line {
+        width: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .progress-step p {
+        font-size: 11px;
+    }
+
+    .survey-container {
+        margin: 15px;
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    .radio-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

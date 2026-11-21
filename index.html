@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITA-U IT Skills Assessment 2026</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-content">
+            <img src="./images/uganda-coat-of-arms.jpg"
+                 alt="Uganda Coat of Arms" style="max-width:80px;">
+            <h1>National Information Technology Authority — Uganda</h1>
+        </div>
+    </header>
+
+    <!-- Survey Banner -->
+    <section class="survey-banner">
+        <img src="./images/survey-banner.jpg" alt="Survey Banner">
+        <div class="banner-overlay">
+            <h2>Uganda National IT Skills Assessment 2026</h2>
+        </div>
+    </section>
+
+    <!-- Three-Step Progress -->
+    <section class="progress-section">
+        <div class="progress-step active">
+            <span>1</span>
+            <p>Respondent Details</p>
+        </div>
+        <div class="progress-line"></div>
+        <div class="progress-step">
+            <span>2</span>
+            <p>Skills Assessment</p>
+        </div>
+        <div class="progress-line"></div>
+        <div class="progress-step">
+            <span>3</span>
+            <p>Submit</p>
+        </div>
+    </section>
+
+    <!-- Respondent Details Form -->
+    <main class="survey-container">
+        <h2>Respondent Information</h2>
+        <p class="intro-text">
+            Please provide your personal information to participate
+            in the Uganda National IT Skills Assessment 2026.
+        </p>
+
+        <form>
+            <fieldset>
+                <legend>Respondent Details</legend>
+
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <select id="title" name="title" required>
+                        <option value="">Select Title</option>
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                        <option>Ms</option>
+                        <option>Dr</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname"
+                           placeholder="Enter your full name"
+                           minlength="4" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="+256700000000"
+                           pattern="\+256[0-9]{9}">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-options">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                        <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="region">Region</label>
+                    <select id="region" name="region" required>
+                        <option value="">Select Region</option>
+                        <option>Central</option>
+                        <option>Eastern</option>
+                        <option>Northern</option>
+                        <option>Western</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Respondent Category</label>
+                    <div class="radio-options">
+                        <label><input type="radio" name="category" value="ICT Professional"> ICT Professional</label>
+                        <label><input type="radio" name="category" value="Government Officer"> Government Officer</label>
+                        <label><input type="radio" name="category" value="Student"> Student</label>
+                    </div>
+                </div>
+
+                <button type="submit">Continue to Skills Assessment</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 National Information Technology Authority — Uganda</p>
+    </footer>
+
+</body>
+</html>
